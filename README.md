@@ -53,3 +53,27 @@ TypeError: Assignment to constant variable.
 | Update value   | ✅ Allowed         | ✅ Allowed         | ❌ Not allowed     |
 | Hoisting       | ✅ Yes (undefined) | ✅ Yes (but TDZ\*) | ✅ Yes (but TDZ\*) |
 | Initialization | Optional          | Optional          | Mandatory         |
+
+**Note => prefer not to use var because of issue in  block scope and fucntional scope.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+
+*************************************************** DATA TYPES **********************************************************************
+
+DATA TYPE
+
+Number  => 2 to power 53
+
+BigInt
+
+string => " "
+
+Boolean = > true/false
+
+null => standalone value
+
+undefined =>
+
+Symbol => unique
