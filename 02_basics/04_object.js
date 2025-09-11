@@ -26,22 +26,36 @@ const regularUser = {
 
 
 //Merge
-const obj1 = {1:"a", 2:"b"}
-const obj2 = {3:"c", 5:"d"}
+// const obj1 = {1:"a", 2:"b"}
+// const obj2 = {3:"c", 5:"d"}
 
 // const obj3 = {, obj1, obj2}
 
-const obj3 = Object.assign({}, obj1,obj2)
-// const obj3 = Object.assign( obj1,obj2)
-console.log(obj3);
-// console.log(obj1);
+// const obj3 = Object.assign({}, obj1,obj2)
+// // const obj3 = Object.assign( obj1,obj2)
+// console.log(obj3);
+// // console.log(obj1);
 
-const obj4 = {...obj1, ...obj2}
-console.log(obj4);
+// const obj4 = {...obj1, ...obj2}
+// console.log(obj4);
 
+// Destructuring
 
+const course = {
+courseName : "js in hindi",
+prince : "999",
+courseInstructor : "Rohit"
+} 
 
+// course.courseInstructor
 
+const {courseInstructor} = course
+console.log(courseInstructor);
 
- 
+// {
+//     "name" : "Rohit",
+//     "coursenames" : "js in hindi",
+//     "price" : "fire"
+// }
+
 
