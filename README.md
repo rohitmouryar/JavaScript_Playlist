@@ -128,3 +128,34 @@ Changing obj2 also affects obj1.
 -------------------------------------------------------------------------------------------------------------------------------------
 
 ==> String
+
+<!-- JS Execution Contexxt -->
+
+> GLobal execution context
+* This is the default execution context created by the JavaScript engine when a script first loads.
+* It's the base context where all global code (code not inside any function) is executed.
+There can only be one GEC per JavaScript file.
+
+
+> Function execution context
+* A new FEC is created every time a function is called.
+* Each function call gets its own distinct execution context.
+
+> Eval Execution context
+
+
+==> Each execution context has two main components:
+> Memory Component (Variable Environment):
+* This component stores variables and function declarations as key-value pairs.
+* During the creation phase of an execution context, memory is allocated for these variables (initialized to undefined) and functions (stored in their entirety).
+
+> Code Component (Thread of Execution):
+* This component is responsible for executing the JavaScript code line by line.
+* JavaScript is single-threaded, meaning it processes one command at a time in a specific order within this component. 
+
+![Alt text](./03_basics/assets/JS.PNG)
+![Alt text](./03_basics/assets/js2.PNG)
+![Alt text](./03_basics/assets/CallStack.PNG)
+
+
+
