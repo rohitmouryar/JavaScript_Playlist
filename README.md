@@ -159,3 +159,42 @@ There can only be one GEC per JavaScript file.
 
 
 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+> Async Code
+=>jS
+    > Synchronoud
+    > Sing le threaded
+note : Above all Async and single threaded are deafult
+
+> Execution context 
+= The execute one line of code at a time
+    > console log -1
+    > console log -2
+    call stack      memory heap
+
+note : Each operation waits for the last one to complete executing
+
+> Blocking code Vs Non Blocking code
+=> Blocking code :
+* Block the flow of program 
+* Read file Sync
+
+=> Non Blocking code :
+* Does not block Exection 
+* Read file Async
+
+![Alt text](./08_events/Event%20Loop.PNG)
+
+
+
+
+    
+     
+
+
+
+
+
