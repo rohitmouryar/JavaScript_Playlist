@@ -3,8 +3,8 @@ A code repo of javascript playlist
 
 
 
-******************* CONST, LET & VAR *******************<br>
-# Var 
+# CONST, LET & VAR <br>
+## Var 
 - Old way (before ES6) to declare variables.<br>
 - Scope: Function-scoped (available inside the function where it is declared).<br>
 - Can be re-declared and updated.<br>
