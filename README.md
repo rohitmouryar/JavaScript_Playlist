@@ -5,10 +5,10 @@ A code repo of javascript playlist
 
 ******************* CONST, LET & VAR *******************<br>
 => Var 
-> Old way (before ES6) to declare variables.<br>
-> Scope: Function-scoped (available inside the function where it is declared).<br>
-> Can be re-declared and updated.<br>
-> Supports hoisting (moved to the top of scope but initialized as undefined).<br>
+- Old way (before ES6) to declare variables.<br>
+- Scope: Function-scoped (available inside the function where it is declared).<br>
+- Can be re-declared and updated.<br>
+- Supports hoisting (moved to the top of scope but initialized as undefined).<br>
 
 var name = "Rohit";<br>
 console.log(name); // Rohit
