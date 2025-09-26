@@ -230,7 +230,7 @@ JavaScript is loosely typed / dynamically typed, so values can be converted auto
 #### 1. Implicit Conversion 
 JavaScript automatically converts one data type to another depending on the context.<br>
 
-#### - [x] Example: Number + String
+ - [x] Example: Number + String
 let result = "5" + 2; <br>
 console.log(result); // "52" (number converted to string)<br>
 
