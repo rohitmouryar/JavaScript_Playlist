@@ -208,16 +208,16 @@ greet();
 ## Typeof
 The typeof operator returns a string indicating the type of the operand's value <br>
 
-console.log(typeof 42);<br>
+- console.log(typeof 42);<br>
 // Expected output: "number"<br>
 
-console.log(typeof "blubber");<br>
+- console.log(typeof "blubber");<br>
 // Expected output: "string"<br>
 
-console.log(typeof true);<br>
+- console.log(typeof true);<br>
 // Expected output: "boolean"<br>
 
-console.log(typeof undeclaredVariable);<br>
+- console.log(typeof undeclaredVariable);<br>
 // Expected output: "undefined"<br>
 
 
