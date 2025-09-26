@@ -220,6 +220,18 @@ The typeof operator returns a string indicating the type of the operand's value 
 - console.log(typeof undeclaredVariable);<br>
 // Expected output: "undefined"<br>
 
+### Data Type conversio 
+JavaScript is loosely typed / dynamically typed, so values can be converted automatically (type coercion) or manually (type casting) into other types<br>
+
+### 1. Types of Conversion
+- Implicit Conversion (Type Coercion) → JS automatically converts data types.<br>
+- Explicit Conversion (Type Casting) → We manually convert data types using functions.<br>
+
+#### 1. Implicit Conversion 
+JavaScript automatically converts one data type to another depending on the context.<br>
+
+- [x] Example: Number + String
+
 
 
 
