@@ -113,27 +113,57 @@ console.log(d); // 100
 
 **Note => prefer not to use var because of issue in  block scope and fucntional scope.
 
+<hr>
 
--------------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------
+## Data type
+- A data type defines the type of value a variable can hold in JavaScript.
+<br>
+- JavaScript is a dynamically typed language, meaning you don’t have to declare the type explicitly — the type is decided at runtime based on the value.
+<br>
 
-*************************************************** DATA TYPES **********************************************************************
+1. Exapmle
+let x = 42;      // number
+<br>
+x = "Hello";     // now it's a string
 
-DATA TYPE
+<hr>
 
-Number  => 2 to power 53
+### Categories of Data Types in JavaScript
+- JavaScript has two main categories:
+<br>
+- Primitive Data Types (simple, immutable values)
+<br>
+- Non-Primitive (Reference) Data Types (objects, arrays, functions, etc.)
+<br>
 
-BigInt
+1. Primitive Data Types
+- Primitive values are stored directly in memory and are immutable (cannot be changed, only replaced).
 
-string => " "
+1. Number → integers, floats, special values (Infinity, NaN)
+- Example 
+<br>
+let age = 25;          // integer
+<br>
+let price = 99.99;     // float
+<br>
+let infinity = Infinity;
+<br>
+let notNumber = NaN;   // Not a Number
 
-Boolean = > true/false
+2. BigInt → for very large integers beyond Number.MAX_SAFE_INTEGER
+- Example
+<br>
+let big = 123456789012345678901234567890n; // add "n" at end
+<br>
+console.log(big + 10n); // works
 
-null => standalone value
+3. String → text enclosed in " ", ' ', or backticks `
+- Example
+<br>
+let name = "Rohit";
+<br>
+let greet = `Hello, ${name}!`; // template literal
 
-undefined =>
-
-Symbol => unique
 
 
 
