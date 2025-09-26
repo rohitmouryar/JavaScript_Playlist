@@ -11,15 +11,15 @@ A code repo of javascript playlist
 - Supports hoisting (moved to the top of scope but initialized as undefined).<br>
 
 var name = "Rohit";<br>
-console.log(name); // Rohit<br>
+console.log(name);           // Rohit<br>
 
-var name = "Maurya"; // re-declaration allowed<br>
-console.log(name); // Maurya
+var name = "Maurya";        // re-declaration allowed<br>
+console.log(name);          // Maurya
 
 
 <hr>
 
-=> let
+## let
 > Introduced in ES6 (2015).
 > Scope: Block-scoped (only available inside { } where it is declared).
 > Can be updated but cannot be re-declared in the same scope.
