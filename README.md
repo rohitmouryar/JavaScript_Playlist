@@ -234,16 +234,16 @@ JavaScript automatically converts one data type to another depending on the cont
 let result = "5" + 2; <br>
 console.log(result); // "52" (number converted to string)<br>
 
-#### - [x] Example: String to Number (when using -, *, /)
+ - [x] Example: String to Number (when using -, *, /)
 console.log("10" - 5); // 5 (string "10" converted to number)<br>
 console.log("10" * 2); // 20 <br>
 console.log("10" / 2); // 5 <br>
 
-#### - [x] Boolean to Number
+ - [x] Boolean to Number
 console.log(true + 1);  // 2 (true → 1) <br>
 console.log(false + 1); // 1 (false → 0) <br>
 
-#### - [x] Sometimes coercion is confusing:
+ - [x] Sometimes coercion is confusing:
 console.log("5" + true);  // "5true" (boolean → string) <br>
 console.log("5" - true);  // 4 (true → 1, "5" → 5) <br>
 
@@ -251,7 +251,7 @@ console.log("5" - true);  // 4 (true → 1, "5" → 5) <br>
 ### 2. Explicit Conversion (Type Casting)
 We convert values manually using built-in functions.
 
-#### - [x] Convert to Number <br>
+ - [x] Convert to Number <br>
 Using Number(), parseInt(), parseFloat() 
 
 console.log(Number("123"));    // 123 (string → number)<br>
@@ -263,7 +263,7 @@ console.log(Number(false)); // 0<br>
 console.log(Number(null));  // 0<br>
 console.log(Number(undefined)); // NaN<br>
 
-#### - [x] Convert to String
+ - [x] Convert to String
 Using String() or .toString() <br>
 
 console.log(String(123));       // "123"  <br>
@@ -271,7 +271,7 @@ console.log((123).toString());  // "123" <br>
 console.log(String(true));      // "true" <br>
 console.log(String(null));      // "null" <br>
 
-#### - [x] Convert to Boolean
+ - [x] Convert to Boolean
 Using Boolean() <br>
 
 console.log(Boolean(1));       // true  <br>
@@ -283,7 +283,7 @@ console.log(Boolean(undefined)); // false<br>
 console.log(Boolean([]));      // true (empty array is truthy)<br>
 console.log(Boolean({}));      // true (empty object is truthy)<br>
 
-#### - [x] Truthy and Falsy Values
+ - [x] Truthy and Falsy Values
 - Falsy values (convert to false in Boolean context):<br>
 false, 0, -0, "", null, undefined, NaN<br>
 - Everything else → truthy <br>
