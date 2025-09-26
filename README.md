@@ -234,16 +234,17 @@ JavaScript automatically converts one data type to another depending on the cont
 let result = "5" + 2; <br>
 console.log(result); // "52" (number converted to string)<br>
 
- - [x] **Example:** String to Number (when using -, *, /)
+ - [x] **Example:** <br>
+ String to Number (when using -, *, /)<br>
 console.log("10" - 5); // 5 (string "10" converted to number)<br>
 console.log("10" * 2); // 20 <br>
 console.log("10" / 2); // 5 <br>
 
- - [x] **Boolean to Number**
+ - [x] **Boolean to Number**  <br>
 console.log(true + 1);  // 2 (true → 1) <br>
 console.log(false + 1); // 1 (false → 0) <br>
 
- - [x] **Sometimes coercion is confusing:**
+ - [x] **Sometimes coercion is confusing:** <br>
 console.log("5" + true);  // "5true" (boolean → string) <br>
 console.log("5" - true);  // 4 (true → 1, "5" → 5) <br>
 
