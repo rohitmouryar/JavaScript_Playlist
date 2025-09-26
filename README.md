@@ -178,8 +178,50 @@ console.log(y); // null
 - Example <br>
 let sym1 = Symbol("id");<br>
 let sym2 = Symbol("id");<br>
-console.log(sym1 === sym2); // false (always unique)
+console.log(sym1 === sym2); // false (always unique)x`
 <hr>
+
+### 2. Non-Primitive (Reference) Data Types
+These are objects stored by reference in memory (not directly). <br>
+
+#### 1.Object
+- Example <br>
+let person = {<br>
+  name: "Rohit",<br>
+  age: 22,<br>
+};<br>
+console.log(person.name); // "Rohit"<br>
+
+#### 2. Array (special kind of object)
+- Example <br>
+let colors = ["red", "green", "blue"]; <br>
+console.log(colors[0]); // "red" <br>
+
+#### 3. Function (also an object in JavaScript)
+- Example  <br>
+function greet() { <br>
+  console.log("Hello World"); <br>
+} <br>
+greet();
+ <hr>
+
+## Typeof
+The typeof operator returns a string indicating the type of the operand's value <br>
+
+console.log(typeof 42);<br>
+// Expected output: "number"<br>
+
+console.log(typeof "blubber");<br>
+// Expected output: "string"<br>
+
+console.log(typeof true);<br>
+// Expected output: "boolean"<br>
+
+console.log(typeof undeclaredVariable);<br>
+// Expected output: "undefined"<br>
+
+
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
