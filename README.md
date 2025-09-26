@@ -129,40 +129,35 @@ x = "Hello";     // now it's a string
 <hr>
 
 ### Categories of Data Types in JavaScript
-- JavaScript has two main categories:
-<br>
-- Primitive Data Types (simple, immutable values)
-<br>
-- Non-Primitive (Reference) Data Types (objects, arrays, functions, etc.)
-<br>
+- JavaScript has two main categories:<br>
+- Primitive Data Types (simple, immutable values)<br>
+- Non-Primitive (Reference) Data Types (objects, arrays, functions, etc.)<br>
 
 1. Primitive Data Types
 - Primitive values are stored directly in memory and are immutable (cannot be changed, only replaced).
 
 1. Number → integers, floats, special values (Infinity, NaN)
-- Example 
-<br>
-let age = 25;          // integer
-<br>
-let price = 99.99;     // float
-<br>
-let infinity = Infinity;
-<br>
+- Example <br>
+let age = 25;          // integer   <br>
+let price = 99.99;     // float <br>
+let infinity = Infinity;    <br>
 let notNumber = NaN;   // Not a Number
 
+<hr>
+
 2. BigInt → for very large integers beyond Number.MAX_SAFE_INTEGER
-- Example
-<br>
-let big = 123456789012345678901234567890n; // add "n" at end
-<br>
+- Example <br>
+let big = 123456789012345678901234567890n; // add "n" at end    <br>
 console.log(big + 10n); // works
 
+<hr>
+
 3. String → text enclosed in " ", ' ', or backticks `
-- Example
-<br>
-let name = "Rohit";
-<br>
+- Example <br>
+let name = "Rohit"; <br>
 let greet = `Hello, ${name}!`; // template literal
+
+<hr>
 
 
 
