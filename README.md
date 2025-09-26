@@ -11,13 +11,13 @@ A code repo of javascript playlist
 - Supports hoisting (moved to the top of scope but initialized as undefined).<br>
 
 var name = "Rohit";<br>
-console.log(name); // Rohit
+console.log(name); // Rohit<br>
 
-var name = "Maurya"; // re-declaration allowed
+var name = "Maurya"; // re-declaration allowed<br>
 console.log(name); // Maurya
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+<hr>
 
 => let
 > Introduced in ES6 (2015).
