@@ -142,42 +142,36 @@ let age = 25;          // integer   <br>
 let price = 99.99;     // float <br>
 let infinity = Infinity;    <br>
 let notNumber = NaN;   // Not a Number
-
 <br>
 
 #### 2. BigInt → for very large integers beyond Number.MAX_SAFE_INTEGER
 - Example <br>
 let big = 123456789012345678901234567890n; // add "n" at end    <br>
 console.log(big + 10n); // works
-
 <br>
 
 #### 3. String → text enclosed in " ", ' ', or backticks `
 - Example <br>
 let name = "Rohit"; <br>
 let greet = `Hello, ${name}!`; // template literal
-
 <br>
 
 #### 4. Boolean → true or false
  - Example  <br>
  let isOnline = true; <br>
 let isAdmin = false;
-
 <br>
 
 #### 5.Undefined → variable declared but not assigned a value
 - Example   <br>
 let x;  <br>
 console.log(x); // undefined
-
 <br>
 
 #### 6. Null → intentional absence of any value
 - Example <br>
 let y = null; <br>
 console.log(y); // null
-
 <br>
 
 #### 7. Symbol → unique and immutable identifiers
@@ -185,7 +179,6 @@ console.log(y); // null
 let sym1 = Symbol("id");<br>
 let sym2 = Symbol("id");<br>
 console.log(sym1 === sym2); // false (always unique)
-
 <hr>
 
 
