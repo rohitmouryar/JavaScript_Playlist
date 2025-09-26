@@ -220,7 +220,7 @@ The typeof operator returns a string indicating the type of the operand's value 
 - console.log(typeof undeclaredVariable);<br>
 // Expected output: "undefined"<br>
 
-### Data Type conversio 
+### Type conversion 
 JavaScript is loosely typed / dynamically typed, so values can be converted automatically (type coercion) or manually (type casting) into other types<br>
 
 ### 1. Types of Conversion
@@ -287,6 +287,8 @@ console.log(Boolean({}));      // true (empty object is truthy)<br>
 - Falsy values (convert to false in Boolean context):<br>
 false, 0, -0, "", null, undefined, NaN<br>
 - Everything else → truthy <br>
+if ("hello") console.log("Truthy"); // runs <br>
+if (0) console.log("Falsy"); // won't run <br>
 
 
 
