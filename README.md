@@ -11,14 +11,14 @@ A code repo of javascript playlist
 - Re-declaration → Allowed in the same scope.<br>
 - Re-assignment → Allowed.<br>
 
-function testVar() {
-  if (true) {
-    var x = 10; // var is function-scoped
-  }
-  console.log(x); // ✅ 10 (accessible outside the block)
-}
+function testVar() {<br>
+  if (true) {<br>
+    var x = 10; // var is function-scoped<br>
+  }<br>
+  console.log(x); // ✅ 10 (accessible outside the block)<br>
+}<br>
 
-testVar();
+testVar();<br>
 
 var y = 5;<br>
 var y = 15; // ✅ re-declaration allowed<br>
@@ -32,31 +32,76 @@ var z = 20;<br>
 <hr>
 
 ## let
-> Introduced in ES6 (2015).
-> Scope: Block-scoped (only available inside { } where it is declared).
-> Can be updated but cannot be re-declared in the same scope.
-> Hoisted but not initialized (gives error if used before declaration).
+- Introduced in ES6 (2015)  <br>
+- Scope → Block-scoped ({ ... }).
+- Hoisting → Yes, but not initialized. Accessing before declaration gives ReferenceError (this is called Temporal Dead Zone).<br>
+- Re-declaration → ❌ Not allowed in the same scope.<br>
+- Re-assignment → ✅ Allowed.<br>
 
-let age = 25;
-age = 26; // allowed
-console.log(age); // 26
+1. Example:
 
-// let age = 30; ❌ Error (cannot re-declare in same scope)
+function testLet() {<br>
+  if (true) {<br>
+    let a = 30; // let is block-scoped<br>
+    console.log(a); // ✅ 30<br>
+  }<br>
+  // console.log(a); // ❌ ReferenceError: a is not defined<br>
+}<br>
 
+testLet();<br>
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+let b = 40;
+// let b = 50; // ❌ SyntaxError: Identifier 'b' has already been declared<br>
+b = 60; // ✅ re-assignment is allowed<br>
+console.log(b); // 60<br>
 
-=> Const
+// Hoisting example<br>
+// console.log(c); // ❌ ReferenceError (TDZ)<br>
+let c = 70;<br>
+console.log(c); // 70<br>
+
+<hr>
+
+## Const
 > Also introduced in ES6.
 > Scope: Block-scoped (like let).
 > Must be initialized at declaration.
 > Cannot be updated or re-declared.
-> Used for constants or values that should not change.
+> Used for constants or values that should not change.ntroduced in ES6 (2015)
 
-const accountId = 144553;
-console.log(accountId);     // error
-TypeError: Assignment to constant variable.
+- Scope → Block-scoped ({ ... }). 
+<br>
+- Hoisting → Yes, but not initialized (same TDZ issue as let).
+<br>
+- Re-declaration → ❌ Not allowed in the same scope.
+<br>
+- Re-assignment → ❌ Not allowed (constant binding).
+<br>
+- ⚠️ But object/array values can still be modified (only the reference is constant).
+<br>
 
+1. Example
+const pi = 3.14;
+<br>
+// pi = 3.14159; // ❌ TypeError: Assignment to constant variable
+<br>
+const person = { name: "Rohit", age: 22 };
+<br>
+person.age = 23; // ✅ modifying object properties is allowed
+<br>
+console.log(person); // { name: "Rohit", age: 23 }
+<br>
+// const person = {}; // ❌ Re-declaration not allowed in same scope
+<br>
+// Hoisting example
+<br>
+// console.log(d); // ❌ ReferenceError (TDZ)
+<br>
+const d = 100;
+<br>
+console.log(d); // 100
+
+<hr>
 
 | Feature        | var               | let               | const             |
 | -------------- | ----------------- | ----------------- | ----------------- |
