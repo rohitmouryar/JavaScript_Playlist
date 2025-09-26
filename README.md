@@ -5,16 +5,28 @@ A code repo of javascript playlist
 
 # CONST, LET & VAR <br>
 ## Var 
-- Old way (before ES6) to declare variables.<br>
-- Scope: Function-scoped (available inside the function where it is declared).<br>
-- Can be re-declared and updated.<br>
-- Supports hoisting (moved to the top of scope but initialized as undefined).<br>
+- Introduced in ES5 (and earlier)<br>
+- Scope → Function-scoped (or globally-scoped if not inside a function).<br>
+-Hoisting → Yes, but initialized as undefined until the execution reaches the declaration.<br>
+- Re-declaration → Allowed in the same scope.<br>
+- Re-assignment → Allowed.<br>
 
-var name = "Rohit";<br>
-console.log(name);           // Rohit<br>
+function testVar() {
+  if (true) {
+    var x = 10; // var is function-scoped
+  }
+  console.log(x); // ✅ 10 (accessible outside the block)
+}
 
-var name = "Maurya";        // re-declaration allowed<br>
-console.log(name);          // Maurya
+testVar();
+
+var y = 5;<br>
+var y = 15; // ✅ re-declaration allowed<br>
+console.log(y); // 15<br>
+
+console.log(z); // ✅ undefined (hoisted, but not initialized yet)<br>
+var z = 20;<br>
+
 
 
 <hr>
